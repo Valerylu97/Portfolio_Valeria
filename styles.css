@@ -172,7 +172,7 @@ nav a:hover::after {
 .cta{
     margin-top: 25px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 12px;
 }
 
