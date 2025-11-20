@@ -1,0 +1,357 @@
+/* ================================
+   PALETA DE COLORES TECH
+================================ */
+
+:root {
+  --bg-dark: #0a0f1a;
+  --bg-card: #111726;
+  --bg-soft: #151d2e;
+  --accent: #7C4DFF;
+  --accent-2: #00B0FF;
+  --text-light: #e6f1ff;
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --border-soft: rgba(255, 255, 255, 0.1);
+
+  --radius: 14px;
+  --transition: .3s ease;
+}
+
+/* ================================
+   RESET
+================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* ================================
+   CONTAINER BASE
+================================ */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ================================
+   HEADER
+================================ */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  background: var(--accent);
+  color: #000;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+}
+#name{
+    font-weight:700
+}
+#description{
+    font-size:12px;
+    color:rgba(255,255,255,0.6)
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  transition: var(--transition);
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 60px 0;
+}
+
+.hero-card {
+  background: var(--bg-card);
+  padding: 40px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-soft);
+  backdrop-filter: blur(8px);
+}
+
+.hero-card h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  margin-bottom: 18px;
+}
+
+.hero-card p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.right-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-img {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-soft);
+}
+
+/* ================================
+   SKILLS BADGES
+================================ */
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill {
+  padding: 6px 14px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border-soft);
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+.cta{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.btn {
+  background: var(--accent);
+  color: #000;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: var(--accent-2);
+}
+
+.btn.secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.btn.secondary:hover {
+  background: var(--accent);
+  color: #000;
+}
+
+/* ================================
+   SECCIONES GENERALES
+================================ */
+
+.section-title {
+  margin: 50px 0 20px 0;
+}
+
+.section-title h2 {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.section-title h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: var(--accent);
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+
+/* ================================
+   ABOUT
+================================ */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.contact-card {
+  background: var(--bg-card);
+  padding: 25px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-soft);
+}
+
+.link {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* ================================
+   CARDS (SKILLS)
+================================ */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: var(--bg-soft);
+  padding: 20px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-soft);
+}
+
+/* ================================
+   PROJECTS
+================================ */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.project {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-soft);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.project img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.project-body {
+  padding: 15px;
+}
+
+/* ================================
+   CONTACT FORM
+================================ */
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  color: var(--text-light);
+  font-size: 15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-grid,
+  .cards,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .right-visual {
+    order: -1;
+  }
+}

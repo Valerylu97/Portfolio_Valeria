@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Valeria Lucero — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <!-- JS -->
+  <script src="/js/main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">VL</div>
+        <div>
+          <div id="name">Valeria Lucero</div>
+          <div id="description">Frontend Developer - En formación</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-card">
+          <h1>Hola, soy <span style="color:var(--electric)">Valeria</span> 👋</h1>
+          <p>Ingeniera en Tecnologías de la Información — Frontend Developer en formación. Me apasiona diseñar interfaces limpias y funcionales, y convertir ideas en aplicaciones útiles.</p>
+
+          <div class="skills">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3</div>
+            <div class="skill">JavaScript (ES6+)</div>
+            <div class="skill">React (en aprendizaje)</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">MySQL</div>
+          </div>
+
+          <div class="cta">
+            <a class="btn" href="#projects">Ver proyectos</a>
+            <a class="btn secondary" href="#contact">Contactar</a>
+          </div>
+        </div>
+
+        <div class="right-visual">
+          <img src="/assets/Banner.png" alt="Banner Valery" class="banner-img">
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="section-title"><h2>Sobre mí</h2></div>
+        <div class="about-grid">
+          <div>
+            <p>Soy Ingeniera en Tecnologías de la Información graduada en Ecuador. Tengo experiencia práctica en proyectos universitarios donde desarrollé el frontend del sitio del Club de Ciencias Computacionales. Actualmente me especializo en desarrollo frontend con énfasis en interfaces accesibles y diseño responsivo.</p>
+            <br>
+            <p>Me caracteriza la responsabilidad, la eficiencia y el aprendizaje constante. Estoy construyendo un portafolio con proyectos reales en HTML, CSS, JavaScript y React.</p>
+            <br>
+            <p><strong>Objetivo:</strong> Conseguir una posición como Desarrolladora Frontend Junior o prácticas profesionales donde pueda aportar y aprender en proyectos reales.</p>
+          </div>
+
+          <div>
+            <div class="contact-card">
+              <div style="font-weight:700">Contacto</div>
+              <div style="font-size:14px;margin-top:8px">📧 valerialucero.burbano@gmail.com</div>
+              <div style="font-size:14px">🔗 
+                <a href="https://github.com/Valerylu97" class="link">GitHub</a> • 
+                <a href="https://www.linkedin.com/in/alejandra-valeria-lucero-burbano-6b8215283/" class="link">LinkedIn</a>
+              </div>
+              <div style="margin-top:12px"><a class="btn" href="#contact">Enviar mensaje</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="section-title"><h2>Habilidades</h2></div>
+        <div class="cards">
+          <div class="card">
+            <h3>Técnicas</h3>
+            <p>HTML5, CSS3, JavaScript (ES6+), React, Git, GitHub, MySQL, PostgreSQL</p>
+          </div>
+          <div class="card">
+            <h3>Herramientas</h3>
+            <p>VSCode, Live Server, Canva, GitHub Pages, Postman</p>
+          </div>
+          <div class="card">
+            <h3>Blandas</h3>
+            <p>Responsabilidad, eficiencia, trabajo en equipo, aprendizaje continuo</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="section-title"><h2>Proyectos</h2></div>
+        <div class="projects-grid">
+          <!-- PROYECTO 1 -->
+          <article class="project">
+            <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80" alt="Proyecto ToDo">
+            <div class="project-body">
+              <h4>ToDo App</h4>
+              <p>Aplicación de lista de tareas en JavaScript puro.</p>
+              <p><a href="#" class="link">Ver demo</a> • <a href="#" class="link">Código</a></p>
+            </div>
+          </article>
+
+          <!-- PROYECTO 2 -->
+          <article class="project">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80" alt="Portfolio HTML">
+            <div class="project-body">
+              <h4>Portfolio Personal</h4>
+              <p>Landing responsiva creada con HTML y CSS.</p>
+              <p><a href="#" class="link">Ver demo</a> • <a href="#" class="link">Código</a></p>
+            </div>
+          </article>
+
+          <!-- PROYECTO 3 -->
+          <article class="project">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80" alt="Notas React">
+            <div class="project-body">
+              <h4>App de Notas (React)</h4>
+              <p>Aplicación con hooks y almacenamiento local.</p>
+              <p><a href="#" class="link">Ver demo</a> • <a href="#" class="link">Código</a></p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="section-title"><h2>Contacto</h2></div>
+
+        <div class="about-grid">
+          <div>
+            <form id="contactForm" class="contact-form">
+              <input placeholder="Nombre" id="name">
+              <input placeholder="Correo" id="email">
+              <textarea placeholder="Mensaje" id="message" rows="5"></textarea>
+              <button type="submit" class="btn">Enviar mensaje</button>
+            </form>
+          </div>
+
+          <div>
+            <div class="contact-card">
+              <div style="font-weight:700">Información</div>
+              <div>📍 Tulcán, Ecuador</div>
+              <div>💼 Abierta a trabajos remotos</div>
+
+              <div style="margin-top:8px">
+                🔗 <a href="#" class="link">LinkedIn</a> • 
+                <a href="#" class="link">GitHub</a>
+              </div>
+
+              <div style="margin-top:12px">
+                <a class="btn" href="assets/Banner.png" download>Descargar banner</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <div>© 2025 Valeria Lucero — Frontend Developer</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
