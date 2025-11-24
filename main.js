@@ -1,3 +1,45 @@
+// === Cargar proyectos dinámicamente ===
+fetch('projects.json')
+  .then(response => response.json())
+  .then(projects => {
+    const container = document.getElementById('projectsContainer');
+    container.innerHTML = "";
+
+    projects.forEach(project => {
+      const article = document.createElement("article");
+      article.classList.add("project");
+
+      // Generar enlaces condicionalmente
+      let linksHTML = "";
+      if (project.demo) {
+        linksHTML += `<a href="${project.demo}" class="link" target="_blank">Ver demo</a>`;
+      }
+      if (project.repo) {
+        if (linksHTML.length > 0) linksHTML += " • "; 
+        linksHTML += `<a href="${project.repo}" class="link" target="_blank">Repositorio</a>`;
+      }
+
+      // Si no hay enlaces, no mostramos la fila
+      const linksSection = linksHTML
+        ? `<p>${linksHTML}</p>`
+        : "";
+
+      article.innerHTML = `
+        <img src="${project.image}" alt="${project.title}">
+        <div class="project-body">
+          <h4>${project.title}</h4>
+          <p>${project.description}</p>
+          ${linksSection}
+        </div>
+      `;
+
+      projectsContainer.appendChild(article);
+    });
+
+  })
+  .catch(err => console.error("Error cargando proyectos:", err));
+
+
 /* ================================
    ANIMACIÓN DE APARICIÓN (FADE-IN)
 ================================ */
@@ -81,8 +123,3 @@ if (form) {
   });
 }
 
-
-/* ================================
-   (Opcional) ANIMACIÓN DE CURSOR
-================================ */
-// Para agregar un cursor luminoso estilo tech más adelante

@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Portfolio Profesional de Valeria Lucero",
+    "image": "/assets/images/portfolio.png",
+    "description": "Mi portafolio web con diseño moderno, animaciones, modo oscuro/ligero y sección de proyectos dinámicos.",
+    "demo": "https://valerylu97.github.io/Portfolio_Valeria/",
+    "repo": "https://github.com/Valerylu97/Portfolio_Valeria"
+  },
+  {
+    "title": "Calculadora Web Moderna",
+    "image": "/assets/images/calculator.png",
+    "description": "Calculadora con diseño glassmorphism, historial en localStorage, soporte de teclado, animaciones y modo oscuro manual/automático.",
+    "demo": "https://valerylu97.github.io/web_calculator/",
+    "repo": "https://github.com/Valerylu97/web_calculator"
+  },
+  {
+    "title": "Machine Learning Lab",
+    "image": "/assets/images/machine_learning.png",
+    "description": "Laboratorio de K-Means, Elbow Method, clustering jerárquico y generación de datasets artificiales usando Python y Google Colab.",
+    "demo": "",
+    "repo": "https://github.com/Valerylu97/Machine_Learning"
+  }
+]
