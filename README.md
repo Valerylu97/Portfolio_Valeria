@@ -37,9 +37,9 @@ Este proyecto es mi **landing page / portafolio personal**, diseñado para prese
  ├── 📄 index.html
  ├── 📄 style.css
  ├── 📄 main.js
+ ├── 📄 projects.json
  ├── 📁 assets
  │     ├── images/
- │     └── icons/
  └── 📄 README.md
 ```
 ---
@@ -63,7 +63,7 @@ Opcionalmente, puedes usar un servidor local con VSCode:
 
 ## 🖼️ Vista previa
 <p align="center">
-  <img src="screen.png" 
+  <img src="./assets/images/portfolio.png" 
        alt="vista previa" 
        style="width:100%; border-radius:12px;">
 </p>
